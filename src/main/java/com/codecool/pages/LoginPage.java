@@ -15,9 +15,14 @@ public class LoginPage extends BasePage {
         this.passwordLocator = page.locator("#password");
         this.loginBtnLocator = page.locator("#login-button");
     }
-    public void login(String username, String password){
+
+    public void login(String username, String password) {
         usernameLocator.fill(username);
         passwordLocator.fill(password);
         loginBtnLocator.click();
+    }
+
+    public String getLoginBtnText() {
+            return loginBtnLocator.getAttribute("value");
     }
 }
