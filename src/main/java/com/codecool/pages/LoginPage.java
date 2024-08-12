@@ -5,9 +5,9 @@ import com.microsoft.playwright.Page;
 
 public class LoginPage extends BasePage {
 
-    private Locator usernameLocator;
-    private Locator passwordLocator;
-    private Locator loginBtnLocator;
+    private final Locator usernameLocator;
+    private final Locator passwordLocator;
+    private final Locator loginBtnLocator;
 
     public LoginPage(Page page) {
         super(page);
