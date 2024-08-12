@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 
 public class HomePage extends BasePage {
 
-    private Locator productsTextLocator;
+    private final Locator productsTextLocator;
 
     public HomePage(Page page) {
         super(page);
