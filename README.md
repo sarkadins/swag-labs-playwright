@@ -24,7 +24,7 @@ Built with:
 [contributors-shield]: https://img.shields.io/github/contributors/sarkadins/swag-labs-playwright
 [contributors-url]: https://github.com/sarkadins/swag-labs-playwright/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-[linkedin-url]: https://www.linkedin.com/in/soma-sarkadi-nagy-1558a498/
+[linkedin-url]: https://www.linkedin.com/in/soma-sarkadi-nagy/
 [playwright-shield]: https://img.shields.io/badge/Playwright-end_to_end_tests-blue
 [playwright-url]: https://playwright.dev/
 [java-shield]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
