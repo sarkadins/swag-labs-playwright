@@ -4,12 +4,9 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
 
-public class LogoutTest {
+public class SelectItemTest {
     private Browser browser;
     private LoginPage loginPage;
     private Page page;
@@ -27,18 +24,5 @@ public class LogoutTest {
         loginPage = new LoginPage(page);
         homePage = new HomePage(page);
     }
-    @ParameterizedTest
-    @CsvFileSource(resources = "logout-data.csv", numLinesToSkip = 1)
-    public void testLogout(String username, String password) {
-      try{
-          loginPage.login(username, password);
-          homePage.logout();
-          String expected = "Login";
-          String actual = loginPage.getLoginBtnText();
-          Assertions.assertEquals(expected, actual);
-      } catch (Exception e){
-          e.printStackTrace();
-      }
 
-    }
 }

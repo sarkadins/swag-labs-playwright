@@ -17,13 +17,14 @@ public class LoginTest {
     private Page page;
     private String URL = "https://www.saucedemo.com/";
     private HomePage homePage;
+    private String password = System.getenv("PASSWORD");
 
     @BeforeEach
     public void setUp() {
         browser = Playwright
                 .create()
                 .chromium()
-                .launch(new BrowserType.LaunchOptions().setHeadless(true));
+                .launch(new BrowserType.LaunchOptions().setHeadless(false));
         page = browser.newPage();
         page.navigate(URL);
         loginPage = new LoginPage(page);
@@ -31,7 +32,7 @@ public class LoginTest {
     }
     @ParameterizedTest
     @CsvFileSource(resources = "login-data.csv", numLinesToSkip = 1)
-    public void testLogin(String username, String password) {
+    public void testLogin(String username) {
         try{
             loginPage.login(username, password);
             String expected = "Products";
