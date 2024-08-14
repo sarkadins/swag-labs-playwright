@@ -4,7 +4,9 @@
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-The following user stories have been implemented in the webshop:
+In this Project, the Swag Labs Beta site has been tested with Playwright framework
+
+The following user stories have been implemented in the web shop:
 
 - As a User, I want to log in so that I have access to features that require identification.
 - As a User, I want to log out so that another user can use the application.
