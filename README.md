@@ -14,6 +14,7 @@ The following user stories have been implemented in the webshop:
 - As a User, I want to check out so that I can finish shopping.
 
 Built with:
+
 [![Playwright][playwright-shield]][playwright-url]
 
 [![Java][java-shield]][java-url]
