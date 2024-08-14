@@ -1,6 +1,7 @@
 # swag-labs-playwright
 
 [![Contributors][contributors-shield]][contributors-url]
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 The following user stories have been implemented in the webshop:
@@ -14,6 +15,7 @@ The following user stories have been implemented in the webshop:
 
 Built with:
 [![Playwright][playwright-shield]][playwright-url]
+
 [![Java][java-shield]][java-url]
 
 [contributors-shield]: https://img.shields.io/github/contributors/sarkadins/swag-labs-playwright
