@@ -4,6 +4,7 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
 public class SelectItemTest {
@@ -24,5 +25,8 @@ public class SelectItemTest {
         loginPage = new LoginPage(page);
         homePage = new HomePage(page);
     }
-
+    @AfterEach
+    public void tearDown() {
+        browser.close();
+    }
 }
