@@ -4,8 +4,6 @@
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 ## Overview
 
 This repository contains an automated test suite for the Swag Labs website using
@@ -18,11 +16,9 @@ out.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Running the Application](#running-the-application)
-- [Environment Variables](#environment-variables)
 - [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [Built with](#built-with)
 
 ## Installation
 
@@ -35,7 +31,17 @@ To get started, you need to clone this repository and set up the required depend
     cd swag-labs-playwright
     ```
 
-2. **Install the dependencies:**
+2. **Environment Variables**
+
+   The following environment variables are required to run the tests:
+
+   PASSWORD: The password used for login. You can set the environment variable directly in your terminal before running the tests:
+
+   ```
+   export PASSWORD=secret_sauce
+   ```
+
+3. **Install the dependencies:**
 
    Ensure you have Maven installed. Then run:
 
@@ -56,17 +62,6 @@ To compile the code and run the main application, use the following Maven comman
 
    ```bash
    mvn compile exec:java -D exec.mainClass="com.codecool.Main"
-   ```
-
-#### Environment Variables
-
-The following environment variables are required to run the tests:
-
-PASSWORD: The password used for login.
-You can set the environment variable directly in your terminal before running the tests:
-
-   ```bash
-   export PASSWORD=secret_sauce
    ```
 
 ##### Running Tests
@@ -104,7 +99,7 @@ You can set the environment variable directly in your terminal before running th
 │   │       └── select-item-data.csv
 └── README.md
 ```
-Built with:
+#### Built with:
 
 [![Playwright][playwright-shield]][playwright-url]
 
