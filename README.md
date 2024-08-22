@@ -1,19 +1,108 @@
-# swag-labs-playwright
+# Swag Labs Playwright Automation
 
 [![Contributors][contributors-shield]][contributors-url]
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-In this Project, the Swag Labs Beta site has been tested with Playwright framework
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-The following user stories have been implemented in the web shop:
+## Overview
 
-- As a User, I want to log in so that I have access to features that require identification.
-- As a User, I want to log out so that another user can use the application.
-- As a User, I want to see an ordered list of the available products so that I can choose from them.
-- As a User, I want to see every product on its own page so that I can get detailed information on the product.
-- As a User, I want to put products into the cart so that I can buy them.
-- As a User, I want to check out so that I can finish shopping.
+This repository contains an automated test suite for the Swag Labs website using
+the [Microsoft Playwright](https://playwright.dev/java/docs/intro) framework with Java. The tests cover various
+functionalities of the Swag Labs website, including login, product selection, adding items to the cart, and checking
+out.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Running the Application](#running-the-application)
+- [Environment Variables](#environment-variables)
+- [Running Tests](#running-tests)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To get started, you need to clone this repository and set up the required dependencies.
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/sarkadins/swag-labs-playwright.git
+    cd swag-labs-playwright
+    ```
+
+2. **Install the dependencies:**
+
+   Ensure you have Maven installed. Then run:
+
+    ```bash
+    mvn clean install
+    ```
+
+   Maven will handle downloading the necessary dependencies, including JUnit 5 and Playwright.
+
+## Usage
+
+The test suite interacts with the Swag Labs website to validate various functionalities. You can execute the tests using
+Maven.
+
+### Running the Application
+
+To compile the code and run the main application, use the following Maven command:
+
+   ```bash
+   mvn compile exec:java -D exec.mainClass="com.codecool.Main"
+   ```
+
+#### Environment Variables
+
+The following environment variables are required to run the tests:
+
+PASSWORD: The password used for login.
+You can set the environment variable directly in your terminal before running the tests:
+
+   ```bash
+   export PASSWORD=secret_sauce
+   ```
+
+##### Running Tests
+
+   ```bash
+   mvn clean test
+   ```
+
+###### Project Structure
+
+
+├── pom.xml                # Project configuration file for Maven
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── codecool
+│   │               ├── pages
+│   │               │   ├── BasePage.java
+│   │               │   ├── CartPage.java
+│   │               │   ├── HomePage.java
+│   │               │   ├── LoginPage.java
+│   │               │   └── Main.java
+│   ├── test
+│   │   ├── java
+│   │   │   ├── CheckOutTest.java
+│   │   │   ├── ListProductsTest.java
+│   │   │   ├── LoginTest.java
+│   │   │   ├── LogoutTest.java
+│   │   │   ├── PutProductsToCartTest.java
+│   │   │   └── SelectItemTest.java
+│   │   └── resources
+│   │       ├── login-data.csv
+│   │       ├── logout-data.csv
+│   │       └── select-item-data.csv
+└── README.md
 
 Built with:
 
