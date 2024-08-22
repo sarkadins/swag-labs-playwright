@@ -4,8 +4,6 @@
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 ## Overview
 
 This repository contains an automated test suite for the Swag Labs website using
@@ -21,8 +19,6 @@ out.
 - [Environment Variables](#environment-variables)
 - [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
