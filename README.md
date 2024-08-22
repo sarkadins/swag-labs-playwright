@@ -75,10 +75,10 @@ You can set the environment variable directly in your terminal before running th
    mvn clean test
    ```
 
-###### Project Structure
+##### Project Structure
 
-
-├── pom.xml                # Project configuration file for Maven
+```
+├── pom.xml                
 ├── src
 │   ├── main
 │   │   └── java
@@ -103,7 +103,7 @@ You can set the environment variable directly in your terminal before running th
 │   │       ├── logout-data.csv
 │   │       └── select-item-data.csv
 └── README.md
-
+```
 Built with:
 
 [![Playwright][playwright-shield]][playwright-url]
