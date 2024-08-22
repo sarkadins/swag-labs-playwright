@@ -20,7 +20,7 @@ public class ListProductsTest {
         browser = Playwright
                 .create()
                 .chromium()
-                .launch(new BrowserType.LaunchOptions().setHeadless(false));
+                .launch(new BrowserType.LaunchOptions().setHeadless(true));
         page = browser.newPage();
         page.navigate(URL);
         loginPage = new LoginPage(page);
