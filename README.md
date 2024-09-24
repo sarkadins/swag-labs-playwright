@@ -1,6 +1,9 @@
 # Swag Labs Playwright Automation
 
 [![Contributors][contributors-shield]][contributors-url]
+[![GitHub Forks][forks-shield]][forks-url]
+[![GitHub Stars][stars-shield]][stars-url]
+[![GitHub Issues][issues-shield]][issues-url]
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -114,6 +117,12 @@ To compile the code and run the main application, use the following Maven comman
 
 [contributors-shield]: https://img.shields.io/github/contributors/sarkadins/swag-labs-playwright
 [contributors-url]: https://github.com/sarkadins/swag-labs-playwright/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sarkadins/swag-labs-playwright
+[forks-url]: https://github.com/sarkadins/swag-labs-playwright/forks
+[stars-shield]: https://img.shields.io/github/stars/sarkadins/swag-labs-playwright
+[stars-url]: https://github.com/sarkadins/swag-labs-playwright/stargazers
+[issues-shield]: https://img.shields.io/github/issues/sarkadins/swag-labs-playwright
+[issues-url]: https://github.com/sarkadins/swag-labs-playwright/issues
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://www.linkedin.com/in/soma-sarkadi-nagy/
 [playwright-shield]: https://img.shields.io/badge/Playwright-end_to_end_tests-blue
