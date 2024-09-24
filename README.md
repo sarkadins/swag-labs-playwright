@@ -37,9 +37,15 @@ To get started, you need to clone this repository and set up the required depend
    The following environment variables are required to run the tests:
 
    PASSWORD: The password used for login. You can set the environment variable directly in your terminal before running the tests:
+   
 
+   Linux / macOS
    ```
    export PASSWORD=secret_sauce
+   ```
+   Windows
+   ```
+   set PASSWORD=secret_sauce
    ```
 
 3. **Install the dependencies:**
